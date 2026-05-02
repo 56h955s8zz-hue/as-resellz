@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AS Resellz | Buy. Sell. Repeat.</title>
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    body {
+
+      background: #0d0d0d;
+
+      color: white;
+
+    }
+
+    header {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 20px 8%;
+
+      background: #111;
+
+      border-bottom: 1px solid #222;
+
+      position: sticky;
+
+      top: 0;
+
+    }
+
+    .logo {
+
+      font-size: 1.8rem;
+
+      font-weight: bold;
+
+      color: white;
+
+    }
+
+    .logo span {
+
+      color: #999;
+
+    }
+
+    nav a {
+
+      color: white;
+
+      text-decoration: none;
+
+      margin-left: 25px;
+
+      font-size: 0.95rem;
+
+      transition: 0.3s;
+
+    }
+
+    nav a:hover {
+
+      color: #888;
+
+    }
+
+    .hero {
+
+      height: 85vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      text-align: center;
+
+      padding: 0 8%;
+
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
+
+        url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80') center/cover;
+
+    }
+
+    .hero-content h1 {
+
+      font-size: 4rem;
+
+      margin-bottom: 15px;
+
+    }
+
+    .hero-content p {
+
+      font-size: 1.2rem;
+
+      color: #bbb;
+
+      margin-bottom: 25px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 12px 28px;
+
+      background: white;
+
+      color: black;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      border-radius: 8px;
+
+      transition: 0.3s;
+
+    }
+
+    .btn:hover {
+
+      background: #ccc;
+
+    }
+
+    section {
+
+      padding: 70px 8%;
+
+    }
+
+    .section-title {
+
+      font-size: 2rem;
+
+      margin-bottom: 30px;
+
+    }
+
+    .categories,
+
+    .products {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+      gap: 20px;
+
+    }
+
+    .card {
+
+      background: #151515;
+
+      border: 1px solid #222;
+
+      border-radius: 12px;
+
+      overflow: hidden;
+
+      transition: 0.3s;
+
+    }
+
+    .card:hover {
+
+      transform: translateY(-5px);
+
+      border-color: #444;
+
+    }
+
+    .card img {
+
+      width: 100%;
+
+      height: 220px;
+
+      object-fit: cover;
+
+    }
+
+    .card-content {
+
+      padding: 18px;
+
+    }
+
+    .card-content h3 {
+
+      margin-bottom: 10px;
+
+      font-size: 1.1rem;
+
+    }
+
+    .card-content p {
+
+      color: #aaa;
+
+      font-size: 0.9rem;
+
+      margin-bottom: 12px;
+
+    }
+
+    .price {
+
+      font-size: 1.1rem;
+
+      font-weight: bold;
+
+      margin-bottom: 12px;
+
+    }
+
+    .sold {
+
+      color: #5cff84;
+
+      font-weight: bold;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 30px;
+
+      border-top: 1px solid #222;
+
+      color: #777;
+
+      font-size: 0.9rem;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">AS <span>Resellz</span></div>
+
+    <nav>
+
+      <a href="#">Home</a>
+
+      <a href="#">Shop</a>
+
+      <a href="#">Bikes</a>
+
+      <a href="#">Clothing</a>
+
+      <a href="#">Parts</a>
+
+      <a href="#">Sold</a>
+
+      <a href="#">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>AS Resellz</h1>
+
+      <p>Buy. Sell. Repeat.</p>
+
+      <a href="#" class="btn">Shop Now</a>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">Shop Categories</h2>
+
+    <div class="categories">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Bikes">
+
+        <div class="card-content">
+
+          <h3>Bikes</h3>
+
+          <p>Electric bikes, MTB, road bikes & more.</p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Clothing">
+
+        <div class="card-content">
+
+          <h3>Clothing</h3>
+
+          <p>Streetwear, branded pieces & rare finds.</p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Parts">
+
+        <div class="card-content">
+
+          <h3>Parts</h3>
+
+          <p>Bike parts, upgrades & accessories.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">Latest Drops</h2>
+
+    <div class="products">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Nike Tech Fleece">
+
+        <div class="card-content">
+
+          <h3>Nike Tech Fleece</h3>
+
+          <p>Size M • Excellent Condition</p>
+
+          <div class="price">£65</div>
+
+          <a href="#" class="btn">View Item</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="Electric Bike">
+
+        <div class="card-content">
+
+          <h3>Electric Bike</h3>
+
+          <p>48V • Clean Condition</p>
+
+          <div class="price">£850</div>
+
+          <a href="#" class="btn">View Item</a>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Bike Forks">
+
+        <div class="card-content">
+
+          <h3>Fox Forks</h3>
+
+          <p>Used • Good Condition</p>
+
+          <div class="price">£140</div>
+
+          <a href="#" class="btn">View Item</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section>
+
+    <h2 class="section-title">Recently Sold</h2>
+
+    <div class="products">
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Headphones">
+
+        <div class="card-content">
+
+          <h3>Beats Headphones</h3>
+
+          <p>Sold in 2 days</p>
+
+          <div class="sold">SOLD</div>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" alt="Hoodie">
+
+        <div class="card-content">
+
+          <h3>Trapstar Hoodie</h3>
+
+          <p>Sold in 1 day</p>
+
+          <div class="sold">SOLD</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    © 2026 AS Resellz. All rights reserved.
+
+  </footer>
+
+</body>
+
+</html>
